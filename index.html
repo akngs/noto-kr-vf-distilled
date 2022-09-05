@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Lightweight Variable Font</title>
+    <style>
+        @font-face {
+            font-family: 'Noto Sans KR Distilled';
+            src: url('./NotoSansKR-VF-distilled.woff2') format('woff2');
+        }
+        @font-face {
+            font-family: 'Noto Serif KR Distilled';
+            src: url('./NotoSerifKR-VF-distilled.woff2') format('woff2');
+        }
+
+        .playground {
+            --weight: 100;
+            font-variation-settings: 'wght' var(--weight);
+            font-size: 2rem;
+        }
+        .serif {
+            font-family: 'Noto Serif KR Distilled', sans-serif;
+        }
+        .sans {
+            font-family: 'Noto Sans KR Distilled', sans-serif;
+        }
+
+    </style>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const weight = document.querySelector('#weight')
+            const playgroundEl = document.querySelector('.playground')
+
+            weight.addEventListener('input', () => {
+                const value = +weight.value
+                playgroundEl.style.setProperty('--weight', value)
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="playground">
+        <div class="serif">
+            <p>동틀 녘 햇빛 포개짐. 팟타이꿍쏫, 펲시, 쑛팬츠, 찦차</p>
+            <p>The quick brown fox jumps over the lazy dog.</p>
+            <p>1234567890</p>
+        </div>
+        <div class="sans">
+            <p>동틀 녘 햇빛 포개짐. 팟타이꿍쏫, 펲시, 쑛팬츠, 찦차</p>
+            <p>The quick brown fox jumps over the lazy dog.</p>
+            <p>1234567890</p>
+        </div>
+    </div>
+    <input type="range" min="100" max="900" value="100" step="10" id="weight">
+</body>
+</html>
