@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
-    <title>Lightweight Variable Font</title>
+    <title>용량을 줄인 NotoSans 및 NotoSerif 가변 폰트</title>
     <style>
         @font-face {
             font-family: 'Noto Sans KR Distilled';
@@ -15,13 +15,36 @@
             src: url('./NotoSerifKR-VF-distilled.woff2') format('woff2');
         }
 
+        :root {
+            font-family: 'Noto Sans KR Distilled', sans-serif;
+            line-height: 1.6;
+        }
+
+        body {
+            margin: 0 auto;
+            max-width: 48rem;
+            padding: 1rem;
+        }
+
+        h1 {
+            margin-bottom: 2rem;
+        }
+
+        input[type="range"] {
+            margin: 1rem 0;
+        }
+
         .playground {
             --weight: 100;
             font-variation-settings: 'wght' var(--weight);
-            font-size: 2rem;
+            font-size: 1.5rem;
+            box-sizing: border-box;
+            padding: 1rem;
+            border: 1px solid #888;
+            margin: 1rem 0 2rem;
         }
         .serif {
-            font-family: 'Noto Serif KR Distilled', sans-serif;
+            font-family: 'Noto Serif KR Distilled', serif;
         }
         .sans {
             font-family: 'Noto Sans KR Distilled', sans-serif;
@@ -41,6 +64,17 @@
     </script>
 </head>
 <body>
+    <h1>용량을 줄인 NotoSans 및 NotoSerif 가변 폰트</h1>
+
+    <p>
+        일상에서 쓰이는 한글 자모 조합과 ASCII의 출력 가능한 문자들만 추출하여
+        용량을 각각 0.3MB, 0.7MB로 줄인 NotoSans-KR, NotoSerif-KR 가변 폰트입니다.
+        (<a href="https://github.com/akngs/noto-kr-vf-distilled">GitHub</a>, 
+        <a href="https://github.com/akngs/noto-kr-vf-distilled/blob/main/LICENSE">SIL Open Font License 1.1</a>)
+    </p>
+
+    <input type="range" min="100" max="900" value="100" step="10" id="weight">
+
     <div class="playground">
         <div class="serif">
             <p>동틀 녘 햇빛 포개짐. 팟타이꿍쏫, 펲시, 쑛팬츠, 찦차</p>
@@ -53,6 +87,11 @@
             <p>1234567890</p>
         </div>
     </div>
-    <input type="range" min="100" max="900" value="100" step="10" id="weight">
+
+    <p>다운로드:</p>
+    <ul>
+        <li><a href="NotoSerifKR-VF-distilled.woff2">NotoSerifKR-VF-distilled.woff2</a></li>
+        <li><a href="NotoSansKR-VF-distilled.woff2">NotoSansKR-VF-distilled.woff2</a></li>
+    </ul>
 </body>
 </html>
