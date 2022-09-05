@@ -1,11 +1,13 @@
-# noto-kr-var-distilled
+# noto-kr-vf-distilled
 
 용량을 각각 0.3MB, 0.7MB로 줄인 NotoSans-KR, NotoSerif-KR 가변 폰트.
 
-원본:
+데모: https://akngs.github.io/noto-kr-vf-distilled/
 
-- [NotoSansKR-VF.ttf](https://github.com/googlefonts/noto-cjk/blob/main/Sans/Variable/TTF/Subset/NotoSansKR-VF.ttf)
-- [NotoSerifKR-VF.ttf](https://github.com/googlefonts/noto-cjk/blob/main/Serif/Variable/TTF/Subset/NotoSerifKR-VF.ttf)
+파일 다운로드:
+
+- [NotoSansKR-VF-distilled.woff2](https://akngs.github.io/noto-kr-vf-distilled/NotoSansKR-VF-distilled.woff2) (원본: [NotoSansKR-VF.ttf](https://github.com/googlefonts/noto-cjk/blob/main/Sans/Variable/TTF/Subset/NotoSansKR-VF.ttf))
+- [NotoSerifKR-VF-distilled.woff2](https://akngs.github.io/noto-kr-vf-distilled/NotoSerifKR-VF-distilled.woff2) (원본: [NotoSerifKR-VF.ttf](https://github.com/googlefonts/noto-cjk/blob/main/Serif/Variable/TTF/Subset/NotoSerifKR-VF.ttf))
 
 변환 과정:
 
