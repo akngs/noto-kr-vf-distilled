@@ -1,6 +1,6 @@
 # noto-kr-vf-distilled
 
-용량을 각각 0.3MB, 0.7MB로 줄인 NotoSans-KR, NotoSerif-KR 가변 폰트.
+용량을 줄인 NotoSans-KR, NotoSerif-KR, Pretendard, Hahmlet 가변 폰트.
 
 데모: https://akngs.github.io/noto-kr-vf-distilled/
 
@@ -8,6 +8,8 @@
 
 - [NotoSansKR-VF-distilled.woff2](https://akngs.github.io/noto-kr-vf-distilled/NotoSansKR-VF-distilled.woff2) (원본: [NotoSansKR-VF.ttf](https://github.com/googlefonts/noto-cjk/blob/main/Sans/Variable/TTF/Subset/NotoSansKR-VF.ttf))
 - [NotoSerifKR-VF-distilled.woff2](https://akngs.github.io/noto-kr-vf-distilled/NotoSerifKR-VF-distilled.woff2) (원본: [NotoSerifKR-VF.ttf](https://github.com/googlefonts/noto-cjk/blob/main/Serif/Variable/TTF/Subset/NotoSerifKR-VF.ttf))
+- [PretendardKR-VF-distilled.woff2](https://akngs.github.io/noto-kr-vf-distilled/PretendardKR-VF-distilled.woff2) (원본: [PretendardVariable.ttf](https://github.com/orioncactus/pretendard/tree/main/packages/pretendard/dist/public/variable/PretendardVariable.ttf))
+- [Hahmlet-VF-distilled.woff2](https://akngs.github.io/noto-kr-vf-distilled/Hahmlet-VF-distilled.woff2) (원본: [Hahmlet[wght].ttf](https://github.com/hyper-type/hahmlet/blob/master/fonts/variable/Hahmlet%5Bwght%5D.ttf))
 
 변환 과정:
 
@@ -18,3 +20,9 @@
 
 - Python 3 및 fonttools 라이브러리 (`pip install fonttools`)
 - woff2 유틸리티 (`brew install woff2`)
+
+폰트 원본 사이트:
+
+- Google Fonts: https://github.com/googlefonts/noto-cjk
+- Pretendard: https://github.com/orioncactus/pretendard
+- Hahmlet: https://github.com/hyper-type/hahmlet
